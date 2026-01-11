@@ -1,0 +1,226 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ================= HEADER ================= */
+.topo {
+  background: #b30000;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-area img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 4px;
+}
+
+.logo-area span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  max-width: 220px;
+  line-height: 1.2;
+}
+
+/* MENU */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* ================= HERO ================= */
+.hero {
+  padding: 70px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #b30000;
+  color: #fff;
+  padding: 14px 26px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+/* ================= CARDS ================= */
+.cards {
+  padding: 50px 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 22px;
+  background: #fafafa;
+  font-size: 15px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #f2f2f2;
+  padding: 18px;
+  text-align: center;
+  font-size: 13px;
+}
+
+/* ================================================= */
+/* 📱 MOBILE — COMPACTO, SEM ESPAÇOS BRANCOS */
+/* ================================================= */
+@media (max-width: 600px) {
+
+  /* HEADER */
+  .topo {
+    padding: 8px 12px;
+  }
+
+  .logo-area img {
+    height: 34px;
+    width: 34px;
+    padding: 2px;
+  }
+
+  .logo-area span {
+    font-size: 12px;
+    max-width: 140px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 22px 12px;
+  }
+
+  .hero h2 {
+    font-size: 19px;
+    margin-bottom: 6px;
+    line-height: 1.2;
+  }
+
+  .hero p {
+    font-size: 13px;
+  }
+
+  .btn {
+    margin-top: 10px;
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  /* CARDS */
+  .cards {
+    padding: 15px 12px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 10px;
+    font-size: 11px;
+  }
+}
+
+/* ================= AJUSTE FINAL DE ALINHAMENTO ================= */
+
+.hero,
+.cards,
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Texto centralizado apenas no hero */
+.hero {
+  text-align: center;
+}
+
+/* Ajuste geral dos textos */
+.content {
+  padding: 40px 20px;
+  font-size: 16px;
+}
+
+/* Formulário alinhado */
+form {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 12px;
+  font-size: 14px;
+  width: 100%;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+
+  .hero,
+  .cards,
+  .content {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .content {
+    padding: 20px 12px;
+  }
+
+}
