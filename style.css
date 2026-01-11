@@ -29,8 +29,8 @@ body {
 }
 
 .logo-area img {
-  height: 48px;
-  width: 48px;
+  height: 90px;
+  width: 90px;
   border-radius: 50%;
   background: #fff;
   padding: 4px;
@@ -224,3 +224,4 @@ form button {
   }
 
 }
+
