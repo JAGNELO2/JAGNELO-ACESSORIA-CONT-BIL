@@ -1,0 +1,22 @@
+{
+  "name": "Meu Site Front-End",
+  "short_name": "MeuApp",
+  "description": "App Front-End com Bíblia, Anotações, Desenho e Calculadora",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#020214",
+  "theme_color": "#0b1a4a",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
